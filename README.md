@@ -12,6 +12,7 @@ Tämän repositoryn avulla Saltin master-slave -arkkitehtuuria hyödyntäen voit
 - Luoda mukautetut asetustiedostot näihin em. ohjelmiin
   - Parhaiten toimii FileZillassa, johon on tallennettu kirjautumistiedot master-koneen FTP-serverille (vsftpd) 
 - Lisätä käyttäjäryhmän ja käyttäjiä (3 kpl)
+- Poistaa asennetut sovellukset
 - Poistaa luodut käyttäjät
 - Poistaa uusia käyttäjiä koskevat asetukset (jotka sijaitsevat /etc/skel -kansiossa) 
   
@@ -30,7 +31,7 @@ Yleisesti ottaen toiimi näin:
   
   - Konfiguroi master ja slave toimintakuntoon. 
   - Kloonaa tämä repository
-  - Suorita top.sls -tila (wipeusers ja wipeskel eli käyttäjiä ja asetustiedostoja poistavat tilat kommentoitu pois - eivät toimi oletuksena) 
+  - Suorita top.sls -tila (wipeapps, wipeusers ja wipeskel eli sovelluksia, käyttäjiä ja asetustiedostoja poistavat tilat kommentoitu pois - eivät toimi oletuksena) 
   - ??? 
   - Profit
   
