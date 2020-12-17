@@ -21,7 +21,7 @@ Tämän repositoryn avulla Saltin master-slave -arkkitehtuuria hyödyntäen voit
   Tilojen ajaminen edellyttää salt minion-servicen asennusta, mikäli haluaa ajaa tilat lokaalisti yhdelle koneelle. 
   Mikäli haluat hyödyntää master -slave arkkitehtuuria tulee sinun asentaa salt minion ja salt master (ks. asennusohjeet täältä: http://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/)
   
-  -Mikäli haluat hyödyntää FileZillan asetuksia omiin tarkoituksiin (nykyiset, itselle asetetut ip:t ja käyttäjät eivät tule tietenkään toimimaan sinulla) tulee sinun käynnistää Filezilla ja valita <b> File </b> ja sieltä <b> Site Manager </b>, josta voit luoda omat asetuksesi valmiiksi. Tämän jälkeen voit kopioida sitemanager.xml -tiedoston /home/<nykyinen käyttäjä>/.config/filezilla -hakemistosta. 
+  -Mikäli haluat hyödyntää FileZillan asetuksia omiin tarkoituksiin (nykyiset, itselle asetetut ip:t ja käyttäjät eivät tule tietenkään toimimaan sinulla) tulee sinun käynnistää Filezilla ja valita <b> File </b> ja sieltä <b> Site Manager </b>, josta voit luoda omat asetuksesi valmiiksi. Tämän jälkeen voit kopioida sitemanager.xml -tiedoston /home/<nykyinen käyttäjä>/.config/filezilla -hakemistosta /srv/salt/files/usersettings/.config/filezilla -hakemistoon, josta kopioituu edelleen orjakoneisiin tilan ajamisen myötä. 
   
 Voit toki tehdä suoraan muutoksia sitemanager.xml -tiedostoon, mutta helpommalla pääset kun konffaat ne GUI:n kautta. 
   
