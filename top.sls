@@ -2,12 +2,12 @@
 # Install all the preferred states (in this order): 
 base:
   '*': 
-#    - apps
-#    - configs
-#    - addusers
-    - wipeapps
-    - wipeusers
-    - wipeskel
+    - apps
+    - configs
+    - addusers
+#    - wipeapps
+#    - wipeusers
+#    - wipeskel
 
 
 
