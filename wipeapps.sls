@@ -1,5 +1,6 @@
 apps-removal: 
-  pkg.removed: 
+ # pkg.removed:
+  pkg.purged: 
     - pkgs: 
       - filezilla
       - blender 

@@ -5,7 +5,7 @@ saltconfigured:
 admin: 
   user.present:
     - fullname: admin
-    - shell: /bin/zsh
+#    - shell: /bin/zsh
     - home: /home/admin
     - groups:
       - saltconfigured
@@ -13,7 +13,7 @@ admin:
 testuser: 
    user.present:
     - fullname: testikäyttäjä
-    - shell: /bin/zsh
+#    - shell: /bin/zsh
     - home: /home/testuser
     - groups:
       - saltconfigured
@@ -21,7 +21,7 @@ testuser:
 saltyuser: 
   user.present: 
     - fullname: suolainen käyttäjä
-    - shell: /bin/zsh
+#    - shell: /bin/zsh
     - home: /home/saltyuser
     - groups:
       - saltconfigured

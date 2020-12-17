@@ -1,13 +1,14 @@
-              
 saltconfigured:
   group.absent
   
 admin: 
-  user.absent
+  user.absent:
+    - purge: True
 
 testuser: 
-   user.absent
-    
+  user.absent:
+    - purge: True
+
 saltyuser: 
-   user.absent 
-    
+  user.absent: 
+    - purge: True

@@ -6,8 +6,9 @@ base:
 #    - configs
 #    - addusers
     - wipeapps
-#    - wipeusers
-#    - wipeskel
+    - wipeusers
+    - wipeskel
+
 
 
 
